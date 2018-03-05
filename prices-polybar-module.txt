@@ -6,5 +6,5 @@ exec = python ~/scripts/prices-polybar-coinmarketcap.py bitcoin
 tail = true
 interval = 60
 
-format-prefix = ""
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
