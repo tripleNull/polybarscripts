@@ -1,7 +1,6 @@
-# polybarscripts
-Scripts being used for polybar
+# Dependencies
+Font Awesome - To display the Bitcoin glyph.
+Coinbase python API - To pull down current Bitcoin price. Clone this from the official github repository rather than installing via pip, this will avoid issues with older iterations of the API.
 
-# known bugs
-~~prices-polybar.py - Will intermittently show a user warning complaining about the API version missing from the header. Need to fix this.~~ Fixed as of commit c1dc3b0
-
+# FYI
 prices-polybar-module.txt - Need to have font awesome installed for this to display correctly. Edit the format-prefix attribute to remove the glyph if necessary.
