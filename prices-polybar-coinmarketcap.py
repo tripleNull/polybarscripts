@@ -1,3 +1,5 @@
+#pulls down current price of cryptocurrency provided as a command line argument when executing the script.
+#ex: python prices-polybar-coinmarketcap.py bitcoin (this will retrieve the current price of bitcoin and print it out using stdout
 import sys
 import requests
 import json
