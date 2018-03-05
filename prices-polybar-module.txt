@@ -1,6 +1,6 @@
 #Need Font Awesome installed for the bitcoin symbol to show as a character
 
-[module/coinbase-prices]
+[module/coinmarketcap-prices]
 type = custom/script
 exec = python ~/scripts/prices-polybar-coinmarketcap.py bitcoin
 tail = true
