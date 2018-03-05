@@ -2,7 +2,7 @@
 
 [module/coinbase-prices]
 type = custom/script
-exec = python ~/scripts/prices-polybar.py
+exec = python ~/scripts/prices-polybar-coinmarketcap.py bitcoin
 tail = true
 interval = 60
 
