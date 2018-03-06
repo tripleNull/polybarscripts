@@ -1,0 +1,20 @@
+REM  *****  BASIC  *****
+
+Sub file_io_read
+	Shell("python /home/matt/scripts/prices.py")
+	Wait 5000
+	dim v1, v2, v3
+	dim document as object
+	document = ThisComponent
+	filename = "/home/matt/Documents/prices.txt"
+	num = FreeFile()
+	open filename for input as #num
+	do while not eof(num)
+		input #num, v1, v2, v3
+		sheet = document.Sheets(3)
+		sheet.getCellByPosition(1, 6).String = v1
+		sheet.getCellByPosition(1, 7).String = v2
+		sheet.getCellByPosition(1, 8).String = v3
+	loop
+	close #num
+End Sub
